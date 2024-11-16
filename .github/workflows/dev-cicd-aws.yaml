@@ -162,7 +162,7 @@ jobs:
     #     fi
 
 # 로드 테스트
-load-test:
+  load-test:
     runs-on: ubuntu-latest
     environment: runner
     services:
@@ -260,7 +260,7 @@ load-test:
           K6_VIRTUAL_USERS: 10
           K6_DURATION: "30s"
 
-
+## 로드테스트 끝
 
   build-and-upload:
     # needs: [verify-pipeline] 
